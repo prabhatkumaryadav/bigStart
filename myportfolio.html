@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="C:\Users\Prabhat Kumar Yadav\Desktop\storefront\myportfolio.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+</head>
+ 
+<body>
+
+<header id="navigation">
+  
+    <nav id="navbar"> 
+    <ul class="links">
+      <li><a href="#other_project">My other projects<br></a></li>
+      <li><a href="#skills">Skills<br></a></li>
+      <li><a href="#address">Address<br></a></li>
+    </ul>
+</nav>
+</header> 
+
+
+<section id="welcome-section">  
+<h1 class="heading">WELCOME</h1>
+<section id="box">
+<div class="box1" id= "red"><br>Hello from c<p>Always have fa</p> </div>
+<div class="box2" id= "black"><br>oding World<br><p>ith in yourself</p></div>
+<div class="box3" id= "beige"></div>
+<div class="box4" id= "yellow"></div>
+</section>
+</section>
+ 
+<section id="projects" >
+ <header class="project-tile" id="other_project" >
+    My journey to coding</header>
+    <p id="my_project">Here is my other projects that will help you to know more about me<hr></p>
+    <section class="project-box">
+    <p class="project1"><img class="smaller-image" src="C:\Users\Prabhat Kumar Yadav\Desktop\storefront\330px-Schindler,_Oskar.jpg" alt="Oscar Schindler image"><br>Tribute Project</p>
+    <p class="project2"><img class="smaller-image1" src="C:\Users\Prabhat Kumar Yadav\Desktop\storefront\photo1.png" alt="technical Document project page"><br><a target="_blank" href="file:///C:/Users/Prabhat%20Kumar%20Yadav/Desktop/storefront/technical-document-project.html"><br>Technical Document Project</a></p>
+    </section>
+</section>
+  
+<section class="grid">
+    <section id="skills">Skills
+    <ul>
+    <li><img src="C:\Users\Prabhat Kumar Yadav\Desktop\storefront\Python_logo_icon.png" alt="python logo"><br> Python </li>
+    <li><img src="C:\Users\Prabhat Kumar Yadav\Desktop\storefront\HTML5_badge (1).png" alt="html logo"><br>HTML</li>
+    <li><img src="C:\Users\Prabhat Kumar Yadav\Desktop\storefront\css3-logo-png-transparent.png" alt="css logo"><br>CSS</li>
+    </ul>     
+ </section>     
+</section>
+<footer id="address">
+<a id="profile-link" target="_blank" href="https://github.com/freecodecamp"> Github link</a>
+</footer>
+</body>
+</html>
+
+
+
+<style>
+#navigation{
+  font-size:30px;
+  position:fixed;
+  top:0px;
+  min-height: 70px;
+  display: flex;
+  width:100%;  
+  justify-content:flex-end;
+  align-items: center;
+  height:auto;
+  background-color:rgb(166, 227, 255);
+  z-index: 6;
+  
+}
+
+ul{
+  font-size:30px;  
+  list-style:none; 
+  display:flex;
+  padding:0px 50px;
+  width:100%;
+  justify-content:space-around; 
+  float:right; 
+}
+
+#navbar a{
+    display: block;
+    text-decoration:none;
+    color:rgb(197, 95, 27);
+    float: left;
+    width: 100%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+@media screen and(max-width: 600px){
+  #navbar ul{
+    border: 1px solid;
+    height: 206px;
+  }
+
+  #navbar{
+    background-color: white;
+    position: absolute;
+    top: 0;
+    padding:0;
+    margin: 0;
+    width:100%;
+    max-height: 275px;
+    border: none;
+
+  }
+}
+  
+
+
+#welcome-section{
+    border:solid #eee;    
+    margin-top: 90px;
+    height:100vh;
+    width: 100%;
+    background:linear-gradient(45deg, rgba(68, 54, 54, 0.575), rgba(231, 167, 167, 0.4));
+    z-index: 1;
+    display: flex;
+
+}
+
+.heading{
+    margin: auto;
+    margin-top: 20px;
+    border: solid;
+    border-radius: 10px;
+    border-style: groove;
+    width: 200px;
+    height:50px;
+    color: rgb(255, 255, 255);
+    display: flex;
+    padding:20px;
+    background:linear-gradient(45deg, rgb(184, 73, 115),rgb(39, 34, 35));
+    z-index: 3;
+    font-size: 35px;
+    align-items: center;
+    text-align: center;
+    font-weight: 900;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    box-shadow: 30px 25px 20px rgb(14, 13, 13);
+
+}
+
+  .box1{    
+    position: absolute;
+    width: 500px;
+    height: 400px;
+    margin-top: 170px;
+    animation-name: slide;
+    animation-duration: 2s;
+    z-index: 3;   
+  }
+
+
+  .box2{    
+    position: absolute;
+    width: 500px;
+    height: 400px;
+    margin-top: 170px;
+    animation-name: slide-reverse;
+    animation-duration: 2s;
+    z-index: 2;   
+  }
+
+
+  .box3{    
+    position: absolute;
+    width: 300px;
+    height: 400px;
+    margin-top: 170px;
+    animation-name: slide-up;
+    animation-duration: 2s;
+    z-index: 1;
+    
+  }
+
+
+
+  .box4{    
+    position: absolute;
+    width: 300px;
+    height: 400px;
+    margin-top: 170px;
+    animation-name: slide-down;
+    animation-duration: 2s;
+    z-index: 1;
+    
+  }
+
+
+ #red {
+    background: red;
+    left: 17%;
+    animation-timing-function: cubic-bezier(0.25,0.35,0.75,0.75);
+    color: rgb(0, 0, 0);
+    font-size: 50px;
+    text-align: right;
+    font-family:Arial, Helvetica, sans-serif ;
+    font-weight: bolder;
+  }
+#red p {
+      font-size: 40px;
+      text-align: right;
+      font-family:Arial, Helvetica, sans-serif ;
+      font-weight: bolder;
+
+  }
+
+
+#black {
+    background: black;
+    right: 17%;
+    animation-timing-function: cubic-bezier(0.25,0.35,0.75,0.75);
+    color:rgb(255, 0, 0);
+    font-size: 50px;
+    font-family:Arial, Helvetica, sans-serif ;
+    font-weight: bolder;    
+  } 
+  
+  
+#black p{
+    font-size: 40px;
+    font-family:Arial, Helvetica, sans-serif ;
+    font-weight: bolder;
+  }
+
+
+#beige {
+    background: rgba(255, 255, 0, 0.514);
+    left: 8px;
+    animation-timing-function: cubic-bezier(0.25,0.35,0.75,0.75);
+  }
+
+  
+#yellow {
+    background: rgba(255, 255, 0, 0.514);
+    left: 80%;
+    animation-timing-function: cubic-bezier(0.25,0.35,0.75,0.75);
+  }
+
+  @keyframes slide {
+    0% {
+      left: 0px;
+    }
+    100% {
+      right: 58%;
+    }
+  }
+  @keyframes slide-reverse {
+    0% {
+      left: 65%;
+    }
+
+    100% {
+      left: 50%;
+    }
+  }
+ @keyframes slide-up {
+    0% {
+      left: 40%;
+    }
+    100% {
+        left:0%;
+      
+    }
+  }
+ @keyframes slide-down {
+    0% {
+      left: 50%;
+    }    
+    100% {
+        right: 78%;
+        flex-grow: 2;
+    }
+  }
+
+#projects{
+  font-size: 35px;
+  text-align: center;
+  height: 100vh;  
+  border:2px solid ;
+  padding: 20px 80px;
+  background: rgb(124, 108, 108);  
+}
+
+
+.project-tile{
+  border: 5px whitesmoke;
+  width: 25vw;
+  display: flex;
+  justify-content: stretch;
+  margin:auto;  
+  border-style: groove;
+  padding: 10px 20px;
+  background: wheat;
+  font-size: 35px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: rgb(15, 15, 15);
+  font-weight: bolder;
+
+}
+
+#my_project{
+  margin-top: 30px;
+  font-size: 30px;
+  color: #eee;
+  font-weight: bolder;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  
+}
+
+
+
+.project-box{
+  display: flex;
+  justify-content: space-around;
+}
+
+.project1{
+    border: hidden ;
+    border-radius: 10px;
+    width: 20vw;
+    font: 10vw;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    background-color: rgb(126, 80, 66);
+}
+
+.smaller-image{ 
+  border: 5px solid black ; 
+  border-radius: 10px;
+  width: 15vw;
+  margin-top: 5px;
+  
+
+}
+
+.project2{
+  border-style: hidden ;
+  border-radius: 10px;
+  width: 40vw;
+  background-color: rgb(126, 80, 66);
+  
+}
+
+.project2 a{
+  text-decoration: none;
+  color:white;
+  font: auto;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bolder;
+}
+
+.smaller-image1{
+  border:5px solid ;
+  border-radius: 10px;  
+  margin-top: 5px;
+  width: 38vw;
+  height: auto;
+  
+}
+
+
+.grid{
+  border: hidden;
+  width: 100%;
+  background-color: chocolate;
+  margin-bottom: 100px;
+  font-size: auto;
+  
+  
+ 
+    
+}
+
+
+
+
+footer{
+
+  border: hidden;
+  bottom: 0px;
+  background-color: darkblue;
+  min-height: 10px;
+    
+}
+
+
+footer a{
+  font-size: 30px;
+  align-items: center;
+  color: black;
+  text-decoration: none;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bolder;
+  margin-left: 40vw;
+}
+</style>
+
+
